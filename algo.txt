@@ -1,0 +1,38 @@
+# Genetic Code Check
+
+
+
+
+------------------------------------------------
+
+The DNA Check AlgorithmGet the Input Sequence:
+
+Ask the user to type in a DNA sequence (for example: "ATGCGATC").
+
+Make it Uppercase:Convert the entire sequence to uppercase letters.This prevents errors if someone types a lowercase "a" instead of "A".
+
+Check for Discrepancies (Invalid Characters):Look at every single letter in the sequence.Valid DNA letters are only A, T, C, and G.If a letter is not one of these four, flag a Discrepancy Error (e.g., "Error: Invalid character 'X' found!").
+
+Check the Length (Codon Check):Genetic code is read in groups of 3 letters called codons. Count the total number of letters in the sequence.
+
+Check if the total length can be cleanly divided by 3. If there is a remainder, flag a Length Discrepancy (e.g., "Warning: Sequence is missing letters to complete the last codon").
+
+Output the Result:If no issues are found, print "Success: DNA sequence is valid!"
+
+Fix Errors:
+If an invalid character or incomplete codon is found, print the error and ask the user to enter a corrected sequence. Repeat the checks until the sequence is valid.
+
+Compare Samples:
+Start with the valid original sequence: ATGCCTATC.
+Ask the user for three sample sequences and compare each one with the original.
+
+- If the sample is identical to the original, print "no change".
+- If the sample is longer than the original, print "addition".
+- If the sample is shorter than the original, print "deletion".
+- If the sample has the same length but different letters, print "substitution".
+
+Examples:
+ATGCCTATC - no change
+ATGCTATC - deletion
+ATTCCTATC - substitution
+ATGCCTAGTC - addition
